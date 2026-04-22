@@ -1,0 +1,57 @@
+USE Kasimtsevabaas;
+--Category (idCategory, Category_Name)
+CREATE TABLE Category(
+idCategory int PRIMARY KEY identity(1,1), 
+Category_Name varchar(30) not null unique);
+
+--product
+CREATE TABLE Productt(
+idProductt int PRIMARY KEY identity(1,1), 
+Productt_Name varchar(10) not null,
+idCategory int,
+FOREIGN KEY (idCategory) REFERENCES Category(idCategory),
+Price decimal(10,2) CHECK (Price > 0)) --rohkem kui 0 
+--tabeli kuvamine
+
+
+--sale
+CREATE TABLE Sale(
+idSale int PRIMARY KEY identity(1,1), 
+idProductt int,
+FOREIGN KEY (idProductt) REFERENCES Productt(idProductt),
+idCustomer int,
+FOREIGN KEY (idCustomer) REFERENCES Customer(idCustomer),
+Count_pr int,
+Date_of_sale date)
+
+--lisabaas customer
+CREATE TABLE Customer(
+idCustomer int PRIMARY KEY identity(1,1), 
+Name varchar(50) not null,
+Contact varchar(30))
+
+--muutumine tüüpi välja
+ALTER TABLE Sale
+ALTER COLUMN Price decimal(12,2);
+
+ALTER TABLE Sale
+ADD Units varchar(25);
+
+
+
+SELECT * FROM Category;
+SELECT * FROM Productt;
+SELECT * FROM Sale;
+SELECT * FROM Customer;
+
+INSERT INTO Category
+VALUES ('mööbel'),('toit')
+
+INSERT INTO Productt
+VALUES('ball', 2, 100), ('auto', 1, 5000), ('piim', 3, 10), ('müts', 1, 50)
+
+INSERT INTO Sale
+VALUES(1,1,1,'2026-04-30','1tk'), (3,2,1,'2026-04-28','1tk')
+
+INSERT INTO Customer
+VALUES('Lisa', '60706342'), ('Katara', '60716346')
