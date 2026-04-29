@@ -45,13 +45,13 @@ SELECT * FROM Sale;
 SELECT * FROM Customer;
 
 INSERT INTO Category
-VALUES ('mööbel'),('toit')
+VALUES ('mööbel'),('toit'),('riietus')
 
 INSERT INTO Productt
-VALUES('ball', 2, 100), ('auto', 1, 5000), ('piim', 3, 10), ('müts', 1, 50)
+VALUES('ball', 1, 100), ('auto', 1, 5000), ('piim', 2, 10), ('müts', 3, 50)
 
 INSERT INTO Sale
-VALUES(1,1,1,'2026-04-30','1tk'), (3,2,1,'2026-04-28','1tk')
+VALUES(1,1,1,'2026-04-30','1tk'), (1,2,1,'2026-04-28','1tk')
 
 INSERT INTO Customer
 VALUES('Lisa', '60706342'), ('Katara', '60716346')
