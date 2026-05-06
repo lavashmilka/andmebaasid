@@ -82,5 +82,44 @@ PRINT 'Max hind = ' + CONVERT(varchar, @maxHind);
 ```
 <img width="207" height="58" alt="{D076D990-1CE6-48A3-8086-2F9D9FD1364B}" src="https://github.com/user-attachments/assets/de0811a4-be8f-4d38-82b7-ece8f28b224f" />
 
+## Dünaamiline SQL protseduuris (ALTER TABLE)
+```sql
+--6.Dünaamiline SQL protseduuris (ALTER TABLE) - universaalne protseduur, mis töötab üks kõik millese tabeliga
+--Protseduur veeru lisamiseks või kustutamiseks 
+--muudab struktuuri (veeru lisamine ADD, veeru kustutamine DROP)
+CREATE PROCEDURE muudatus
+    @tegevus varchar(10),
+    @tabelinimi varchar(25),
+    @veerunimi varchar(25),
+    @tyyp varchar(25) = NULL
+AS
+BEGIN
+    DECLARE @sqltegevus varchar(max);
+
+    SET @sqltegevus = CASE 
+        WHEN @tegevus = 'add' THEN 
+            CONCAT('ALTER TABLE ', @tabelinimi, ' ADD ', @veerunimi, ' ', @tyyp)
+
+        WHEN @tegevus = 'drop' THEN 
+            CONCAT('ALTER TABLE ', @tabelinimi, ' DROP COLUMN ', @veerunimi)
+    END;
+
+    PRINT @sqltegevus;
+    EXEC (@sqltegevus);
+END;
+
+exec muudatus 'add', 'categories', 'testVeerg', 'int'
+select * from categories
+exec muudatus 'drop', 'categories', 'testVeerg', 'int'
+```
+<img width="355" height="75" alt="{5E7EC651-CC0D-40DC-8CA9-312FFCB808B8}" src="https://github.com/user-attachments/assets/08d9535d-b648-4a88-b679-53fe26407e18" />
+<img width="259" height="101" alt="{7E8798FE-97B1-4DBA-AEC6-35A9695E9570}" src="https://github.com/user-attachments/assets/643f1680-2262-4184-a2b0-b4532087e5c7" />
+<img width="309" height="50" alt="{3DE49050-0AA5-4747-948C-088196BD2E91}" src="https://github.com/user-attachments/assets/39299635-2b9d-4e32-b348-1842e1af0168" />
+<img width="211" height="121" alt="{55D8855A-6966-479E-B22C-210FEC1185CA}" src="https://github.com/user-attachments/assets/6602ab31-72af-4824-8279-fda9303f1fd4" />
+
+
+
+
+
 
 
