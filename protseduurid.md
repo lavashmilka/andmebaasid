@@ -123,6 +123,7 @@ exec muudatus 'drop', 'categories', 'testVeerg', 'int'
 <img width="259" height="101" alt="{7E8798FE-97B1-4DBA-AEC6-35A9695E9570}" src="https://github.com/user-attachments/assets/643f1680-2262-4184-a2b0-b4532087e5c7" />
 <img width="309" height="50" alt="{3DE49050-0AA5-4747-948C-088196BD2E91}" src="https://github.com/user-attachments/assets/39299635-2b9d-4e32-b348-1842e1af0168" />
 <img width="211" height="121" alt="{55D8855A-6966-479E-B22C-210FEC1185CA}" src="https://github.com/user-attachments/assets/6602ab31-72af-4824-8279-fda9303f1fd4" />
+<img width="230" height="271" alt="{D0B5A201-2822-4060-BFAD-02412A2398C7}" src="https://github.com/user-attachments/assets/a6b2d28b-9e9f-43e0-be59-ee6930c7d607" />
 
 
 
