@@ -61,6 +61,8 @@ exec suuremHind 400;
 ```
 <img width="476" height="125" alt="{0CFCE502-D3A7-4F28-8CC2-E22107DA9242}" src="https://github.com/user-attachments/assets/35571992-a285-4c6a-ab8e-4b558fc91f34" />
 <img width="480" height="92" alt="{9E1259DE-38A2-4A91-AB61-40DD0F151BBB}" src="https://github.com/user-attachments/assets/7c08828e-ea4a-4f93-aba6-6ed37bdfb7f9" />
+<img width="224" height="278" alt="{99021E6A-FC00-4912-90BB-7CBAED85F893}" src="https://github.com/user-attachments/assets/093bbdec-cfb5-4787-ac27-5fb1e1300491" />
+
 
 ## OUTPUT parameetrid (min ja max väärtus)
 ```sql
@@ -84,6 +86,8 @@ PRINT 'Min hind = ' + CONVERT(varchar, @minHind);
 PRINT 'Max hind = ' + CONVERT(varchar, @maxHind);
 ```
 <img width="207" height="58" alt="{D076D990-1CE6-48A3-8086-2F9D9FD1364B}" src="https://github.com/user-attachments/assets/de0811a4-be8f-4d38-82b7-ece8f28b224f" />
+<img width="224" height="278" alt="{99021E6A-FC00-4912-90BB-7CBAED85F893}" src="https://github.com/user-attachments/assets/cf5a70e6-f315-4215-a904-9042aa5b5e0c" />
+
 
 ## Dünaamiline SQL protseduuris (ALTER TABLE)
 ```sql
