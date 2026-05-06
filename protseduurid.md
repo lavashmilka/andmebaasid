@@ -45,3 +45,42 @@ exec otsing1taht 'a';
 <img width="231" height="127" alt="{CD6225F5-391C-4D53-99FD-0754F5FDA2FE}" src="https://github.com/user-attachments/assets/dd05a5a8-089f-4e28-8fb4-593a8f5bf10f" />
 <img width="246" height="215" alt="{15000FD1-CA04-44FD-93EB-3814162C3B18}" src="https://github.com/user-attachments/assets/8db1f819-84d4-467b-bbbb-4c8a5c869131" />
 
+```sql
+create procedure suuremHind
+@hind int 
+as
+begin
+select * from products
+where list_price > @hind;
+end
+--kutse
+exec suuremHind 400;
+```
+<img width="476" height="125" alt="{0CFCE502-D3A7-4F28-8CC2-E22107DA9242}" src="https://github.com/user-attachments/assets/35571992-a285-4c6a-ab8e-4b558fc91f34" />
+<img width="480" height="92" alt="{9E1259DE-38A2-4A91-AB61-40DD0F151BBB}" src="https://github.com/user-attachments/assets/7c08828e-ea4a-4f93-aba6-6ed37bdfb7f9" />
+
+## OUTPUT parameetrid (min ja max väärtus)
+```sql
+CREATE PROCEDURE minmaxHind
+    @minHind MONEY OUTPUT,
+    @maxHind MONEY OUTPUT
+AS
+BEGIN
+    SELECT 
+        @minHind = MIN(list_price),
+        @maxHind = MAX(list_price)
+    FROM products;
+END;
+
+--kutse
+DECLARE @minHind MONEY, @maxHind MONEY;
+
+EXEC minmaxHind @minHind OUTPUT, @maxHind OUTPUT;
+
+PRINT 'Min hind = ' + CONVERT(varchar, @minHind);
+PRINT 'Max hind = ' + CONVERT(varchar, @maxHind);
+```
+<img width="207" height="58" alt="{D076D990-1CE6-48A3-8086-2F9D9FD1364B}" src="https://github.com/user-attachments/assets/de0811a4-be8f-4d38-82b7-ece8f28b224f" />
+
+
+
