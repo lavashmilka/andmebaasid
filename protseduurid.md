@@ -16,6 +16,7 @@ end;
 <img width="273" height="235" alt="{194D6309-040F-4D62-AAD9-27B772F11B67}" src="https://github.com/user-attachments/assets/e1c51092-ff65-457f-9984-d6905e352259" />
 
 ```sql
+-- protseduur, mis kustutab kategooria id järgi
 create procedure kustutaKategooria
 @kustutaId int
 AS
@@ -32,6 +33,7 @@ exec kustutaKategooria 3
 
 
 ```sql
+--protseduur mis kuvab kategooriad sisestatud esimese tähe järgi
 create procedure otsing1taht
 @taht char(1)
 as
@@ -46,6 +48,7 @@ exec otsing1taht 'a';
 <img width="246" height="215" alt="{15000FD1-CA04-44FD-93EB-3814162C3B18}" src="https://github.com/user-attachments/assets/8db1f819-84d4-467b-bbbb-4c8a5c869131" />
 
 ```sql
+--protseduur, mis kuvab tooded, kus on hind suurem kui sisestatud hind
 create procedure suuremHind
 @hind int 
 as
