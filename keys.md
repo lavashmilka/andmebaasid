@@ -11,7 +11,7 @@ Erinevus teistest võtmetest:
 
 ```sql
 CREATE TABLE opilased(
-opilasedID INT identity(1,1) PRIMARY KEY,
+opilasedID INT PRIMARY KEY IDENTITY(1,1),
 Nimi_op VARCHAR(50));
 ```
 
@@ -32,11 +32,11 @@ Erinevus teistest võtmetest:
 
 ```sql
 CREATE TABLE Kursus(
-KursusID INT IDENTITY(1,1) PRIMARY KEY,
+KursusID INT PRIMARY KEY IDENTITY(1,1),
 KursuseNimi VARCHAR(50));
 
 CREATE TABLE Tudeng(
-TudengID INT IDENTITY(1,1) PRIMARY KEY,
+TudengID INT PRIMARY KEY IDENTITY(1,1),
 Nimi VARCHAR(50),
 KursusID INT,
 FOREIGN KEY (KursusID)
@@ -61,7 +61,7 @@ Erinevus teistest võtmetest:
 
 ```sql
 CREATE TABLE Kasutajad(
-KasutajaID INT IDENTITY(1,1) PRIMARY KEY,
+KasutajaID INT PRIMARY KEY IDENTITY(1,1),
 Kasutajanimi VARCHAR(50) UNIQUE);
 ```
 
@@ -81,7 +81,7 @@ Erinevus teistest võtmetest:
 
 ```sql
 CREATE TABLE Raamat(
-RaamatID INT IDENTITY(1,1) PRIMARY KEY,
+RaamatID INT PRIMARY KEY IDENTITY(1,1),
 Pealkiri VARCHAR(100));
 ```
 
@@ -143,7 +143,7 @@ Erinevus teistest võtmetest:
 
 ```sql
 CREATE TABLE Tootaja(
-ID INT IDENTITY(1,1) PRIMARY KEY,
+ID INT PRIMARY KEY IDENTITY(1,1),
 Email VARCHAR(50),
 Telefon VARCHAR(20));
 ```
@@ -168,7 +168,7 @@ Erinevus teistest võtmetest:
 
 ```sql
 CREATE TABLE Klient (
-    KlientID INT IDENTITY(1,1) PRIMARY KEY,
+    KlientID INT PRIMARY KEY IDENTITY(1,1),
     Telefon VARCHAR(20) UNIQUE,
     Email VARCHAR(100) UNIQUE
 );
@@ -190,7 +190,7 @@ Erinevus teistest võtmetest:
 
 ```sql
 CREATE TABLE Tootaja2(
-    ID INT IDENTITY(1,1) PRIMARY KEY,
+    ID INT PRIMARY KEY IDENTITY(1,1),
     Isikukood VARCHAR(20) UNIQUE
 );
 ```
