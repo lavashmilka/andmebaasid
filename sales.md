@@ -1,4 +1,7 @@
 # Andmebaas sales 
+
+[Põhimõisted](README.md) | [Kasutajad](kasutaja.md) | [Kasutajad XAMPP](kasutajaXampp.md) | [Protseduurid](protseduurid.md) | [Võtmed/Keys](keys.md) | [Küsimused](kysimused.md)
+
 ```sql
 --1.categories
 create table categories(
