@@ -1,3 +1,7 @@
+# CREATE TABLE, ALTER TABLE. Andmete defineerimise laused
+
+[Põhimõisted](README.md) | [Kasutajad](kasutaja.md) | [Kasutajad XAMPP](kasutajaXampp.md) | [Protseduurid](protseduurid.md) | [Võtmed/Keys](keys.md) | [Küsimused](kysimused.md)
+
 <img width="997" height="394" alt="{3761C149-B469-4C8D-88F2-C6630D859CD3}" src="https://github.com/user-attachments/assets/3bd563fd-53ef-497a-92e5-fb951811c2fa" />
 
 ## Koosta päring tabeli Language loomiseks
