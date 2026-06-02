@@ -1,4 +1,7 @@
 # Andmebaasi võtmed (Keys)
+
+[Põhimõisted](README.md) | [Kasutajad](kasutaja.md) | [Kasutajad XAMPP](kasutajaXampp.md) | [Protseduurid](protseduurid.md) | [Võtmed/Keys](keys.md) | [Küsimused](kysimused.md)
+
 ## Primary Key
 
 Primary Key ehk peamine võti on väli või väljade kombinatsioon, mille abil saab iga tabeli rea üheselt ära tunda.
