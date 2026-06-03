@@ -1,5 +1,7 @@
 ## Trigger - päästik
 
+[Põhimõisted](README.md) | [Kasutajad](kasutaja.md) | [Kasutajad XAMPP](kasutajaXampp.md) | [Trigerid](trigger.md) | [Triggerid XAMPP](triggerXamp.md) | [Protseduurid](protseduurid.md) | [Võtmed/Keys](keys.md) | [Küsimused](kysimused.md)
+
 ### SQL triggerid on spetsiaalsed andmebaasi objektid, mis käivituvad automaatselt, kui toimub teatud sündmus (nt INSERT, UPDATE või DELETE).
 ```sql
 --Trigger lisatud kirjeid jälgimiseks tabelis “linnad” – INSERT
