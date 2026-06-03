@@ -1,3 +1,5 @@
+[Põhimõisted](README.md) | [Kasutajad](kasutaja.md) | [Kasutajad XAMPP](kasutajaXampp.md) | [Trigerid](trigger.md) | [Triggerid XAMPP](triggerXamp.md) | [Protseduurid](protseduurid.md) | [Võtmed/Keys](keys.md) | [Küsimused](kysimused.md)
+
 <img width="600" height="642" alt="image" src="https://github.com/user-attachments/assets/071f5254-b97b-439c-83f0-be2c36042b45" />
 
 ```sql
